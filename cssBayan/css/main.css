@@ -104,10 +104,6 @@ body{
     position: relative;
 }
 
-.copy__block:focus{
-    max-height: 100%;
-}
-
 .copy__text{
     position: absolute;
     top: 10%;
@@ -133,6 +129,8 @@ body{
     font-size: 30px;
     position: sticky;
 }
+
+
 
 
 @media(min-width: 300px){
@@ -385,8 +383,18 @@ body{
         font-size: 30px;
         position: sticky;
     }
-    
-    span:active{
-        transform: rotate(45deg);
+}
+
+@media(min-width: 1900px){
+    .header__title{
+        padding-bottom: 0.3em;
+        font-size: 5em;
+        border-bottom: 7px solid #d3d5d7;
+        line-height: 1.5;
+        word-wrap: break-word;
+    }
+
+    .copy__block{
+        font-size: 2em;
     }
 }
